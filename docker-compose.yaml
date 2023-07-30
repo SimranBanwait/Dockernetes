@@ -1,0 +1,17 @@
+version: "3"
+services:
+  x1:
+    image: simranbanwait/portfolio
+    ports:
+      - "8000:80"
+    networks:
+      - tnet
+  x2:
+    image: simranbanwait/static
+    ports:
+      - "9000:80"
+    networks:
+      - tnet
+networks:
+  tnet:
+
