@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: folio-service
 spec:
+  type: NodePort
   selector:
       app:  cloner
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
+      nodePort: 30010
