@@ -1,3 +1,5 @@
+#run commmand : docker run -t reactapp .
+
 FROM node:alpine3.17 as ReactContainer
 WORKDIR /Portfolio
 COPY package.json /Portfolio
